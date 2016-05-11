@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>Radio</title>
+
+	<!--Include JQM and JQ-->
+	<link rel="stylesheet" href="css/themes/jqmfb.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure.min.css" />
+	<link href="skin/pink.flag/css/jplayer.pink.flag.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+	<style type="text/css">
+		body {background-color:#000000}
+		a {color: #FFFFFF; text-decoration: none;}
+		.ui-page .ui-header {
+			color: #FFFFFF;
+			background: #000000 !important;
+		}
+	</style>
+	<script type="text/javascript">
+	
+	//<![CDATA[
+	$(document).ready(function(){
+
+		new jPlayerPlaylist({
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1"
+		}, [
+			{
+				title:"Cro Magnon Man",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+			},
+			{
+				title:"Your Face",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+			},
+			{
+				title:"Cyber Sonnet",
+				mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+			},
+			{
+				title:"Tempered Song",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+			},
+			{
+				title:"Hidden",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+			},
+			{
+				title:"Lentement",
+				free:true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+			},
+			{
+				title:"Lismore",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+			},
+			{
+				title:"The Separation",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
+			},
+			{
+				title:"Beside Me",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
+			},
+			{
+				title:"Bubble",
+				free:true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+			},
+			{
+				title:"Stirring of a Fool",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+			},
+			{
+				title:"Partir",
+				free: true,
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+			},
+			{
+				title:"Thin Ice",
+				mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+				oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+			}
+		], {
+			swfPath: "js",
+			supplied: "oga, mp3",
+			wmode: "window",
+			useStateClassSkin: true,
+			autoBlur: false,
+			smoothPlayBar: true,
+			keyEnabled: true
+		});
+	});
+	//]]>
+	</script>
+</head>
+<body>
+
+	<div data-role="page" id="index">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Radio Online</h1>
+		</div>
+
+		<div data-role="main" id="main_index" class="ui-content">
+			<div align="center"><img src="img/radio.png" width="200"></div>
+			<div>
+			<a id="btn_iniciar" href="#radio" data-role="button">Clique aqui para iniciar</a>
+			</div>
+			<div id="aviso_offline" style="display:none;">Não existe conexão com a Internet</div>
+			
+		</div>
+	</div>
+	
+	<div data-role="page" id="radio">
+
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
+			<div style="background-color:#000000;text-align:center">
+				<a href="#index" data-role="button">Clique aqui para voltar</a>
+				<p>&nbsp;</p>
+			</div>	
+		</div>
+
+		<div data-role="main" id="main_radio">
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+		<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player"  style="width:90%">
+	<div class="jp-type-playlist" data-role="none">
+		<div class="jp-gui jp-interface" data-role="none">
+			<div class="jp-volume-controls" data-role="none">
+				<button class="jp-mute" data-role="none" tabindex="0">mute</button>
+				<button class="jp-volume-max" data-role="none" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+			<div class="jp-controls-holder" data-role="none">
+				<div class="jp-controls" data-role="none">
+					<button class="jp-previous" data-role="none" tabindex="0">previous</button>
+					<button class="jp-play" data-role="none" tabindex="0">play</button>
+					<button class="jp-stop" data-role="none" tabindex="0">stop</button>
+					<button class="jp-next" data-role="none" tabindex="0">next</button>
+				</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" data-role="none" tabindex="0">repeat</button>
+					<button class="jp-shuffle" data-role="none" tabindex="0">shuffle</button>
+				</div>
+			</div>
+		</div>
+		<div class="jp-playlist">
+			<ul>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+
+		
+		</div>	
+	</div>
+	
+	<div data-role="page" id="semconexao">
+
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
+			<h1>Radio Online</h1>
+		</div>
+
+		<div data-role="main" id="main_semconexao">
+			  <div id="aviso_offline">Não existe conexão com a Internet</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript">
+	$(document).ready(onDeviceReady());
+	</script>
+	
+</body>
+</html>
